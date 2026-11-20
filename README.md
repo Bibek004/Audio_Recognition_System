@@ -112,13 +112,4 @@ npm run dev       # http://localhost:5173
    running, no mutexes, no concurrency bugs to worry about. Node/Express
    owns all the "app state" (song list) since it's much better suited to it.
 
-## Notes for a fresh CV writeup
 
-Compared to the original version, this rebuild removes:
-- the hand-rolled raw-socket HTTP server (replaced by Express)
-- the `yt-dlp`/YouTube ingestion path (replaced by manual WAV uploads)
-- in-memory shared state + mutexes (replaced by simple file-based storage,
-  since each CLI run is independent)
-
-The core fingerprinting math (FFT → spectrogram → peak-picking →
-combinatorial hashing → offset-voting match) is unchanged.
