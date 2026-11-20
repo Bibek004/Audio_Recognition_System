@@ -1,0 +1,13 @@
+{
+  "name": "quickmusic",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build-engine": "cd Backend/engine && make",
+    "setup": "npm install --prefix Backend/server && npm install --prefix Frontend && npm run build-engine",
+    "dev": "concurrently -n SERVER,CLIENT -c blue,green \"npm start --prefix Backend/server\" \"npm run dev --prefix Frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

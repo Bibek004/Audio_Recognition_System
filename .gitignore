@@ -1,0 +1,11 @@
+node_modules/
+Backend/engine/enroll
+Backend/engine/recognize
+Backend/engine/*.o
+Backend/data/uploads/*
+Backend/data/queries/*
+!Backend/data/uploads/.gitkeep
+!Backend/data/queries/.gitkeep
+Backend/data/songs.json
+Backend/data/fingerprints.db
+.DS_Store
