@@ -1,4 +1,4 @@
-# Quickmusic (v2 — beginner-friendly rebuild)
+# Audio_recognition(v2 — beginner-friendly rebuild)
 
 A Shazam-style audio recognition app, rebuilt with a much simpler stack:
 
